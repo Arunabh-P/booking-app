@@ -1,7 +1,22 @@
-import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const withNextIntl = createNextIntlPlugin();
+
+/** @type {import('next').NextConfig} */
+const config: import('next').NextConfig = {
+  compress: false,
+  reactStrictMode: true,
+  output: 'standalone',
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/dku0lexry/**',
+      }
+    ],
+  },
 };
 
-export default nextConfig;
+module.exports = withNextIntl(config);

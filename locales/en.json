@@ -1,0 +1,9 @@
+{
+    "bookTicket": {
+    "pageTitle":"Select Your Seats",
+    "billTitle":"Booking Summary",
+    "noSeatSelected":"No seats selected",
+    "bookNow":"Book Now",
+    "total":"Total"
+  }
+}

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer base {
+  :root {
+    --font-roboto: 'Roboto', sans-serif;
+
+    --background: #fff;
+    --foreground: #1a051d;
+    --primary: #d5f0ee;
+    --secondary: #0c796e;
+    --color-gray-50: #eeeeee;
+  }
+  
+}
+
+@layer utilities {
+    .section-padding {
+        @apply px-[24px] py-[12px] sm:px-[48px]  sm:py-[24px]  md:px-[64px]  md:py-[32px] lg:px-[80px] lg:py-[40px] xl:px-[96px] xl:py-[48px] 2xl:px-[112px] 2xl:py-[66px];
+      }
+}

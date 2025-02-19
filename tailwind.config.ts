@@ -9,8 +9,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        primary: {
+          DEFAULT: 'var(--primary)',
+        },
+        secondary: {
+          DEFAULT: 'var(--secondary)',
+        },
+        gray: {
+          50: 'var(--color-gray-50)',
+        }
+      },
+      fontFamily: {
+        roboto: ['var(--font-roboto)', 'roboto'],
       },
     },
   },
