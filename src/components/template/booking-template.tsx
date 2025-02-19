@@ -43,7 +43,7 @@ const BookingTemplate = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row gap-2 section-padding bg-primary">
+    <div className="flex flex-col md:flex-row gap-2 section-padding bg-primary min-h-screen">
       <div className="w-full md:w-7/12 flex flex-col items-center justify-center bg-white p-3 sm:p-5 rounded-lg">
         <h3 className="font-semibold my-3 text-center">{t("pageTitle")}</h3>
         <div className="flex flex-wrap justify-center gap-3 mb-3 sm:mb-5 border-[1.5px] rounded-md p-2 bg-gray-50 sm:w-fit">
